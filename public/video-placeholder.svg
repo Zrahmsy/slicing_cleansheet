@@ -1,1 +1,13 @@
- 
+<svg width="400" height="225" viewBox="0 0 400 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="225" rx="24" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="400" y2="225" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#90caf9"/>
+      <stop offset="1" stop-color="#2196f3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="112" r="40" fill="#e3f2fd"/>
+  <circle cx="200" cy="110" r="18" fill="#90caf9"/>
+  <rect x="180" y="130" width="40" height="18" rx="9" fill="#90caf9"/>
+  <text x="200" y="200" text-anchor="middle" fill="#fff" font-size="24" font-family="Arial" dy=".3em">Video</text>
+</svg> 

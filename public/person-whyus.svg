@@ -1,1 +1,6 @@
- 
+<svg width="320" height="400" viewBox="0 0 320 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="400" rx="32" fill="#e5e7eb"/>
+  <circle cx="160" cy="120" r="48" fill="#90caf9"/>
+  <rect x="100" y="180" width="120" height="160" rx="40" fill="#2196f3"/>
+  <rect x="120" y="340" width="80" height="30" rx="15" fill="#bdbdbd"/>
+</svg> 
