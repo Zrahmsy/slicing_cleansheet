@@ -5,15 +5,15 @@ const LandingHero = () => (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: 1200, margin: '0 auto', gap: 40, padding: '0 24px' }}>
       {/* Kiri: Judul, deskripsi, tombol */}
       <div style={{ flex: 1, minWidth: 320 }}>
-        <h1 style={{ fontSize: 48, fontWeight: 700, marginBottom: 16, lineHeight: 1.1 }}>
+        <h1 style={{ fontSize: 48, fontWeight: 700, marginBottom: 16, lineHeight: 1.1, color: '#000' }}>
           Jasa Bersih <br />
           <span style={{ textDecoration: 'underline', textDecorationColor: '#2196f3' }}>Rumah</span> dan <br />
           <span style={{ textDecoration: 'underline', textDecorationColor: '#2196f3' }}>Kantor</span>
         </h1>
-        <p style={{ fontSize: 16, marginBottom: 24 }}>
+        <p style={{ fontSize: 16, marginBottom: 24, color: '#000' }}>
           Menyelesaikan permasalahan kebersihan sekaligus mengurangi anak putus sekolah, pengangguran, dan ujungnya Pada Pengentasan Kemiskinan. <br />
           Cleansheet telah memberdayakan 250+ anak muda dan akan semakin berkembang. Semakin banyak yang order, semakin banyak yang dibantu.<br />
-          <b>#BusinessForHelpingPeople</b>
+          <b style={{ color: '#000' }}>#BusinessForHelpingPeople</b>
         </p>
         <button style={{ background: '#2196f3', color: '#fff', border: 'none', borderRadius: 20, padding: '12px 32px', fontWeight: 600, fontSize: 18, marginBottom: 12 }}>
           Pesan Sekarang
