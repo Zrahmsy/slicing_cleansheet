@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import LandingHeader from '../../LandingHeader';
 import SejarahSection from './SejarahSection';
+import FoundationSection from './FoundationSection';
+import KataMerekaSection from './KataMerekaSection';
+import SertifikasiSection from './SertifikasiSection';
+import DownloadAppSection from './DownloadAppSection';
 
 export default function TentangPage() {
   return (
@@ -27,6 +31,10 @@ export default function TentangPage() {
         </section>
       </main>
       <SejarahSection />
+      <FoundationSection />
+      <KataMerekaSection />
+      <SertifikasiSection />
+      <DownloadAppSection />
     </>
   );
 } 
