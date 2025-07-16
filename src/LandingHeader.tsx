@@ -5,47 +5,64 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const menu = [
-  { name: "Beranda", href: "/landing" },
-  { name: "Layanan", href: "/layanan" },
+  { name: "Beranda", href: "/" },
   { name: "Tentang", href: "/tentang" },
+  { name: "Layanan", href: "/layanan" },
+  { name: "Join Us", href: "/join" },
   { name: "Blog", href: "/blog" },
+];
+
+const socialIcons = [
+  { alt: 'Facebook', src: '/icon-facebook.svg', href: '#' },
+  { alt: 'Twitter', src: '/icon-twitter.svg', href: '#' },
+  { alt: 'Instagram', src: '/icon-instagram.svg', href: '#' },
 ];
 
 const LandingHeader = () => {
   const pathname = usePathname();
 
   return (
-    <header style={{ padding: '8px 0', background: '#fff' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-        {/* Kontak kiri */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-          <span style={{ fontSize: 14, color: '#000' }}>📞 081297984971</span>
-          <span style={{ fontSize: 14, color: '#000' }}>✉️ cs@cleansheet.id</span>
-          <span style={{ fontSize: 14, color: '#000' }}>📍 Tangerang Selatan</span>
+    <header className="w-full bg-white border-b">
+      {/* Bar atas */}
+      <div className="w-full bg-white border-b border-gray-100 text-xs text-gray-500 flex items-center justify-between px-4 py-1">
+        <div className="flex items-center gap-4">
+          <span className="hidden sm:flex items-center gap-1"><span role="img" aria-label="phone">📞</span> 081297984971</span>
+          <span className="hidden sm:flex items-center gap-1"><span role="img" aria-label="mail">✉️</span> cs@cleansheet.id</span>
+          <span className="hidden sm:flex items-center gap-1"><span role="img" aria-label="location">📍</span> Tangerang Selatan</span>
         </div>
-        {/* Logo tengah */}
-        <div className="logo-placeholder" style={{ width: 60, height: 40, background: '#e5e7eb', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Link href="/" style={{ color: '#000' }}>Logo</Link>
+        <div className="flex items-center gap-3">
+          {socialIcons.map((icon) => (
+            <a key={icon.alt} href={icon.href} target="_blank" rel="noopener noreferrer">
+              <img src={icon.src} alt={icon.alt} className="h-4 w-4 opacity-70 hover:opacity-100 transition" />
+            </a>
+          ))}
+          <span className="flex items-center gap-1 ml-2"><img src="/uk-flag.svg" alt="EN" className="h-4 w-4" />EN</span>
         </div>
-        {/* Menu kanan */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+      </div>
+      {/* Bar utama */}
+      <div className="flex items-center justify-between max-w-6xl mx-auto px-4 py-2">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <Link href="/">
+            <img src="/logo-placeholder.svg" alt="Clean Sheet Logo" className="h-8" />
+          </Link>
+        </div>
+        {/* Menu */}
+        <nav className="flex items-center gap-6">
           {menu.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              style={{
-                color:
-                  pathname === item.href || (item.href === '/' && pathname === '/landing')
-                    ? '#0070f3'
-                    : '#000',
-                fontWeight: pathname === item.href ? 600 : undefined,
-              }}
+              className={
+                (pathname === item.href || (item.href === '/' && pathname === '/'))
+                  ? 'text-blue-600 font-semibold border-b-2 border-blue-600 pb-1'
+                  : 'text-gray-700 hover:text-blue-500'
+              }
             >
               {item.name}
             </Link>
           ))}
-          <button style={{ background: '#2196f3', color: '#fff', border: 'none', borderRadius: 20, padding: '8px 20px', fontWeight: 600, marginLeft: 8 }}>Unduh Aplikasi</button>
-          <span role="img" aria-label="EN" style={{ marginLeft: 8, color: '#000' }}>🇬🇧 EN</span>
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-full font-semibold ml-2 hover:bg-blue-600 transition">Unduh Aplikasi</button>
         </nav>
       </div>
     </header>
