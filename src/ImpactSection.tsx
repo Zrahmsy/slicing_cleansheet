@@ -1,60 +1,40 @@
 import React from "react";
-import ImpactTestimonialCard from "./ImpactTestimonialCard";
+import ImpactScholarshipStat from "./ImpactScholarshipStat";
 
-const testimonials = [
-  {
-    name: "Sanusi",
-    subtitle: "Rangers Biru Cleansheet",
-    quote:
-      "Saya sangat senang saat mendapatkan beasiswa untuk melanjutkan pendidikan saya ke jenjang perkuliahan. Terlebih lagi orang tua turut berbahagia anaknya dapat melanjutkan pendidikannya untuk meraih kesuksesan",
-    photo: "/profile-placeholder.svg",
-  },
-  {
-    name: "Fajri",
-    subtitle: "Rangers Biru Cleansheet",
-    quote:
-      'Senang bisa dapat kesempatan kembali menuntut ilmu karena tidak ada kekayaan seperti pengetahuan, tidak ada kemiskinan seperti ketidaktahuan',
-    photo: "/profile-placeholder.svg",
-  },
-  {
-    name: "Bagus",
-    subtitle: "Alumni Cleansheet",
-    quote:
-      'Cleansheet merupakan salah satu faktor yang berimpact pada karir saya untuk mewujudkan cita-cita saya menjadi PNS',
-    photo: "/profile-placeholder.svg",
-  },
+const stats = [
+  { value: "+50", label: "Paket Biaya Pendidikan Kuliah" },
+  { value: "+190", label: "Paket Bantuan Biaya Hidup" },
+  { value: "+10", label: "Paket Pelatihan dan Vokasi" },
 ];
 
 const ImpactSection = () => (
-  <section style={{ background: 'linear-gradient(180deg, #1565c0 0%, #f8fafc 60%)', padding: '72px 0 72px 0' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-      <h2 style={{ color: '#fff', fontSize: 32, fontWeight: 700, marginBottom: 40 }}>Dampak Cleansheet</h2>
-      <div style={{ display: 'flex', gap: 40, alignItems: 'flex-start' }}>
-        {/* Kiri: Video/cover card */}
-        <div style={{ flex: 1, minWidth: 340 }}>
-          <div style={{ background: '#e3f2fd', borderRadius: 24, overflow: 'hidden', boxShadow: '0 2px 12px #bdbdbd', position: 'relative', width: '100%', height: 220, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src="/impact-video-cover.svg" alt="Impact Video" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            <button style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', background: 'rgba(255,255,255,0.9)', border: 'none', borderRadius: '50%', width: 56, height: 56, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px #bdbdbd', cursor: 'pointer', padding: 0 }} aria-label="Play Video">
-              <img src="/play-icon.svg" alt="Play" style={{ width: 32, height: 32 }} />
-            </button>
-            <div style={{ position: 'absolute', left: 24, top: 24, color: '#222', fontWeight: 700, fontSize: 24, textAlign: 'left' }}>
-              Terima Kasih,<br />Sobat Cleansheet
-              <div style={{ fontWeight: 400, fontSize: 16, marginTop: 12, color: '#222' }}>
-                Berkat kalian, kami bisa mendapatkan kualitas hidup yang lebih baik
-              </div>
-              <div style={{ fontSize: 12, color: '#222', marginTop: 8, background: '#fff', borderRadius: 8, display: 'inline-block', padding: '2px 10px', fontWeight: 500 }}>
-                #businessforhelpingpeople
-              </div>
-            </div>
-            <img src="/logo-placeholder.svg" alt="CleanSheet" style={{ position: 'absolute', right: 24, top: 24, width: 80 }} />
-          </div>
+  <section style={{ padding: '96px 0 0 0', background: '#f8fafc' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', gap: 0, alignItems: 'stretch' }}>
+      <div style={{ flex: 2, padding: '0 0 0 0' }}>
+        <div style={{ fontWeight: 700, fontSize: 28, marginBottom: 8, marginTop: 0 }}>
+          Impact Cleansheet<br />
+          <span style={{ fontWeight: 400 }}>We Are Socialtechno<span style={{ color: '#2563eb', fontWeight: 700 }}>preneurship</span></span>
         </div>
-        {/* Kanan: Testimoni */}
-        <div style={{ flex: 1.2, display: 'flex', flexDirection: 'column', gap: 24 }}>
-          {testimonials.map((t, i) => (
-            <ImpactTestimonialCard key={i} {...t} />
-          ))}
+        <div style={{ color: '#64748b', fontSize: 17, marginBottom: 24 }}>
+          Penyerahan Beasiswa Pendidikan 2025 di IPB University untuk mewujudkan cita-cita anak bangsa.
         </div>
+        <div style={{ borderRadius: 20, overflow: 'hidden', background: '#fff', boxShadow: '0 2px 12px #0001', marginBottom: 24, maxWidth: 520 }}>
+          <img src="/impact-video-cover.svg" alt="Impact Cleansheet" style={{ width: '100%', height: 220, objectFit: 'cover', display: 'block' }} />
+        </div>
+        <div style={{ display: 'flex', gap: 8, marginLeft: 8, marginBottom: 0 }}>
+          <span style={{ width: 48, height: 8, borderRadius: 4, background: '#2563eb', display: 'inline-block' }} />
+          <span style={{ width: 16, height: 8, borderRadius: 4, background: '#e0e7ef', display: 'inline-block' }} />
+          <span style={{ width: 16, height: 8, borderRadius: 4, background: '#e0e7ef', display: 'inline-block' }} />
+        </div>
+      </div>
+      <div style={{ flex: 1.2, background: '#1656a8', borderRadius: '0 24px 0 0', padding: '40px 32px 32px 32px', marginLeft: 32, display: 'flex', flexDirection: 'column', justifyContent: 'center', minWidth: 320, position: 'relative' }}>
+        <div style={{ color: '#fff', fontWeight: 700, fontSize: 24, marginBottom: 32 }}>
+          Penerima Beasiswa 2025
+        </div>
+        {stats.map((s, i) => (
+          <ImpactScholarshipStat key={i} {...s} />
+        ))}
+        <div style={{ position: 'absolute', right: 0, bottom: 0, width: 120, height: 80, background: '#2563eb', borderTopLeftRadius: 80, zIndex: 0 }} />
       </div>
     </div>
   </section>

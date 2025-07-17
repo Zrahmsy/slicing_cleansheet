@@ -3,15 +3,17 @@ import LandingHeader from "./LandingHeader";
 import LandingHero from "./LandingHero";
 import LandingTestimoniArtikel from "./LandingTestimoniArtikel";
 import ServicesSection from "./ServicesSection";
+import SubscriptionSection from "./SubscriptionSection";
+import PromoSection from "./PromoSection";
 import WhyUsSection from "./WhyUsSection";
-import AboutSection from "./AboutSection";
+import OrderStepsSection from "./OrderStepsSection";
+import TestimonialSection from "./TestimonialSection";
 import ImpactSection from "./ImpactSection";
-import HowToOrderSection from "./HowToOrderSection";
-import TeamSection from "./TeamSection";
-import ClientTestimonialSection from "./ClientTestimonialSection";
+import SocialSection from "./SocialSection";
 import MediaCoverageSection from "./MediaCoverageSection";
 import DownloadAppSection from "./DownloadAppSection";
-import BlogSection from "./BlogSection";
+import FooterContactBar from "./FooterContactBar";
+import FooterMain from "./FooterMain";
 
 const LandingPage = () => (
   <div style={{ background: '#f8fafc', minHeight: '100vh' }}>
@@ -25,29 +27,17 @@ const LandingPage = () => (
       </div>
     </div>
     <ServicesSection />
+    <SubscriptionSection />
+    <PromoSection />
     <WhyUsSection />
-    <AboutSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
+    <OrderStepsSection />
+    <TestimonialSection />
     <ImpactSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
-    <HowToOrderSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
-    <TeamSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
-    <ClientTestimonialSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
+    <SocialSection />
     <MediaCoverageSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
     <DownloadAppSection />
-    <div style={{ marginBottom: 56 }} />
-    <div style={{ marginTop: 56 }} />
-    <BlogSection />
+    <FooterContactBar />
+    <FooterMain />
   </div>
 );
 
