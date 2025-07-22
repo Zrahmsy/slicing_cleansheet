@@ -1,4 +1,6 @@
+
 'use client';
+import Link from 'next/link';
 
 import React, { useState } from "react";
 import PromoCard from "../../PromoCard";
@@ -25,7 +27,9 @@ export default function PromoPage() {
         <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">Promo</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-6xl px-4 mb-8">
           {promos.map((promo, idx) => (
-            <PromoCard key={idx} {...promo} />
+            <Link href={`/promo/${promo.code}`} key={idx} className="block">
+              <PromoCard {...promo} />
+            </Link>
           ))}
         </div>
         {/* Pagination */}
