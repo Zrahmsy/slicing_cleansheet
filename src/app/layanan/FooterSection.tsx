@@ -1,4 +1,5 @@
 // NOTE: Logo gunakan logo-placeholder.svg, ikon sosmed gunakan icon-facebook.svg, icon-instagram.svg, icon-twitter.svg, dan icon-whatsapp.svg di public/
+import Image from "next/image";
 import Link from 'next/link';
 
 const menus = [
@@ -21,7 +22,7 @@ export default function FooterSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div className="flex flex-col gap-2">
-            <img src="/logo-placeholder.svg" alt="Clean Sheet Logo" className="h-10 mb-1" />
+            <Image src="/logo-placeholder.svg" alt="Clean Sheet Logo" width={40} height={40} style={{ marginBottom: '0.25rem' }} />
             <span className="text-xs text-gray-300">Clean, Passion, and Contribution</span>
           </div>
           <div className="flex-1 md:ml-8">
@@ -40,7 +41,7 @@ export default function FooterSection() {
               <div className="flex gap-4 items-center mt-2 md:mt-0">
                 {sosmed.map((s) => (
                   <a key={s.alt} href={s.href} target="_blank" rel="noopener noreferrer">
-                    <img src={s.src} alt={s.alt} className="h-5 w-5" />
+                    <Image src={s.src} alt={s.alt} width={20} height={20} />
                   </a>
                 ))}
               </div>
@@ -50,7 +51,7 @@ export default function FooterSection() {
       </div>
       {/* WhatsApp Floating Button */}
       <a href="#" className="fixed bottom-6 right-6 z-50 bg-white rounded-full shadow-lg p-2 border-2 border-green-500 flex items-center justify-center hover:scale-105 transition">
-        <img src="/icon-whatsapp.svg" alt="WhatsApp" className="h-8 w-8" />
+        <Image src="/icon-whatsapp.svg" alt="WhatsApp" width={32} height={32} />
       </a>
     </footer>
   );

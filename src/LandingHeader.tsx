@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -33,10 +34,10 @@ const LandingHeader = () => {
         <div className="flex items-center gap-3">
           {socialIcons.map((icon) => (
             <a key={icon.alt} href={icon.href} target="_blank" rel="noopener noreferrer">
-              <img src={icon.src} alt={icon.alt} className="h-4 w-4 opacity-70 hover:opacity-100 transition" />
+              <Image src={icon.src} alt={icon.alt} width={16} height={16} className="opacity-70 hover:opacity-100 transition" />
             </a>
           ))}
-          <span className="flex items-center gap-1 ml-2"><img src="/uk-flag.svg" alt="EN" className="h-4 w-4" />EN</span>
+          <span className="flex items-center gap-1 ml-2"><Image src="/uk-flag.svg" alt="EN" width={16} height={16} />EN</span>
         </div>
       </div>
       {/* Bar utama */}
@@ -44,7 +45,7 @@ const LandingHeader = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href="/">
-            <img src="/logo-placeholder.svg" alt="Clean Sheet Logo" className="h-8" />
+            <Image src="/logo-placeholder.svg" alt="Clean Sheet Logo" width={32} height={32} />
           </Link>
         </div>
         {/* Menu */}

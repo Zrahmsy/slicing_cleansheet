@@ -1,7 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import LandingHeader from "../../../LandingHeader";
 import FooterSection from "../../../FooterMain";
-import PromoDetailInfo from "../promo detail/PromoDetailInfo";
 import PromoDetailTerms from "../promo detail/PromoDetailTerms";
 
 export default function PromoDetailPage({ params }: { params: { code: string } }) {
@@ -28,7 +28,7 @@ export default function PromoDetailPage({ params }: { params: { code: string } }
           {/* Left: Promo Image & Main Info */}
           <div className="flex-1 bg-white rounded-xl shadow p-8 flex flex-col items-center">
             <div className="w-48 h-48 mb-4 flex items-center justify-center">
-              <img src={promo.image} alt="Promo" className="w-full h-full object-contain rounded-lg" />
+              <Image src={promo.image} alt="Promo" width={400} height={180} style={{ objectFit: 'contain', borderRadius: '0.5rem' }} />
             </div>
             <div className="flex flex-col items-center w-full">
               <div className="flex items-center gap-2 mb-2">

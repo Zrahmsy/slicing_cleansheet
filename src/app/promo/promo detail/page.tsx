@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import LandingHeader from "../../../LandingHeader";
 import FooterSection from "../../../FooterMain";
 import PromoDetailInfo from "./PromoDetailInfo";
@@ -13,7 +14,7 @@ export default function PromoDetailPage() {
           {/* Left: Promo Image & Main Info */}
           <div className="flex-1 bg-white rounded-xl shadow p-8 flex flex-col items-center">
             <div className="w-48 h-48 mb-4 flex items-center justify-center">
-              <img src="/placeholder-image.svg" alt="Promo" className="w-full h-full object-contain rounded-lg" />
+              <Image src="/placeholder-image.svg" alt="Promo" width={400} height={180} style={{ objectFit: 'contain', borderRadius: '0.5rem' }} />
             </div>
             <PromoDetailInfo />
           </div>

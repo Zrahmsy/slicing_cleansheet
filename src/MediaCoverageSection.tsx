@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const mediaLogos = [
   "/media-mandiri.svg",
@@ -16,7 +17,7 @@ const MediaCoverageSection = () => (
       </h2>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 56, flexWrap: 'wrap' }}>
         {mediaLogos.map((logo, idx) => (
-          <img key={idx} src={logo} alt="Media Logo" style={{ height: 48, objectFit: 'contain', maxWidth: 160 }} />
+          <Image key={idx} src={logo} alt="Media Logo" width={160} height={48} style={{ objectFit: 'contain' }} />
         ))}
       </div>
     </div>

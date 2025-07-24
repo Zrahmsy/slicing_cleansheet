@@ -17,7 +17,6 @@ const promos = Array(9).fill({
 
 export default function PromoPage() {
   const [page, setPage] = useState(1);
-  const promosPerPage = 9;
   const totalPages = 5;
 
   return (

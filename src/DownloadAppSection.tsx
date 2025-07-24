@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const DownloadAppSection = () => (
   <section style={{ padding: '0', background: 'linear-gradient(180deg, #f8fafc 60%, #e0f2fe 100%)', position: 'relative' }}>
@@ -12,13 +13,13 @@ const DownloadAppSection = () => (
           Mempermudah layanan dengan menghadirkan solusi aplikasi mobile untuk Anda. Pilih tombol di bawah, dan klik tombol download.
         </div>
         <div style={{ display: 'flex', gap: 18, marginBottom: 24 }}>
-          <img src="/google-play-placeholder.svg" alt="Google Play" style={{ height: 54, width: 180, objectFit: 'contain', borderRadius: 8, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
-          <img src="/app-store-placeholder.svg" alt="App Store" style={{ height: 54, width: 180, objectFit: 'contain', borderRadius: 8, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/google-play-placeholder.svg" alt="Google Play" width={180} height={54} style={{ objectFit: 'contain', borderRadius: 8, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
+          <Image src="/app-store-placeholder.svg" alt="App Store" width={180} height={54} style={{ objectFit: 'contain', borderRadius: 8, background: '#fff', boxShadow: '0 2px 8px #0001' }} />
         </div>
       </div>
       <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', position: 'relative', minHeight: 340 }}>
-        <img src="/download-app-phone.svg" alt="App Phone" style={{ width: 320, maxWidth: '100%', position: 'absolute', right: 0, bottom: 0 }} />
-        <img src="/whatsapp-icon.svg" alt="WhatsApp" style={{ width: 56, height: 56, position: 'absolute', right: 24, bottom: 24, zIndex: 2 }} />
+        <Image src="/download-app-phone.svg" alt="App Phone" width={320} height={320} style={{ maxWidth: '100%', position: 'absolute', right: 0, bottom: 0 }} />
+        <Image src="/whatsapp-icon.svg" alt="WhatsApp" width={56} height={56} style={{ position: 'absolute', right: 24, bottom: 24, zIndex: 2 }} />
       </div>
     </div>
   </section>

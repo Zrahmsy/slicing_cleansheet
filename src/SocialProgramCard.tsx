@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface SocialProgramCardProps {
   title: string;
@@ -24,7 +25,7 @@ const SocialProgramCard: React.FC<SocialProgramCardProps> = ({ title, descriptio
       <div style={{ color: '#334155', fontSize: 17 }}>{description}</div>
     </div>
     <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
-      <img src={image} alt={title} style={{ width: 320, maxWidth: '100%', borderRadius: 18, objectFit: 'cover' }} />
+      <Image src={image} alt={title} width={320} height={180} style={{ maxWidth: '100%', borderRadius: 18, objectFit: 'cover' }} />
     </div>
   </div>
 );

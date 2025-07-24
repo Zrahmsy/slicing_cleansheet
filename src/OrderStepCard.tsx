@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface OrderStepCardProps {
   image: string;
@@ -20,7 +21,7 @@ const OrderStepCard: React.FC<OrderStepCardProps> = ({ image, step, active }) =>
     border: active ? '2px solid #2563eb' : '2px solid #e5e7eb',
     transition: 'box-shadow 0.2s, border 0.2s',
   }}>
-    <img src={image} alt={`Langkah ${step}`} style={{ width: 90, height: 90, objectFit: 'contain' }} />
+    <Image src={image} alt={`Langkah ${step}`} width={90} height={90} style={{ objectFit: 'contain' }} />
   </div>
 );
 

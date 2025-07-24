@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ServiceCardProps {
   title: string;
@@ -13,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image, bestSeller }) =
         BEST SELLER
       </div>
     )}
-    <img src={image} alt={title} style={{ width: '100%', height: 120, objectFit: 'cover' }} />
+    <Image src={image} alt={title} width={400} height={120} style={{ width: '100%', objectFit: 'cover' }} />
     <div style={{ padding: 16, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
       <div style={{ fontWeight: 600, fontSize: 18 }}>{title}</div>
       <button style={{ marginTop: 8, alignSelf: 'flex-end', background: '#e0e7ef', border: 'none', borderRadius: '50%', width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>

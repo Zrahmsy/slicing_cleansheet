@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const menus = [
   "Tentang Kami",
@@ -13,7 +14,7 @@ const FooterMain = () => (
     <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', flexDirection: 'row', gap: 40, alignItems: 'flex-start', flexWrap: 'wrap' }}>
       <div style={{ flex: 1, minWidth: 220 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-          <img src="/logo-placeholder.svg" alt="CleanSheet Logo" style={{ height: 54 }} />
+          <Image src="/logo-placeholder.svg" alt="CleanSheet Logo" width={54} height={54} />
         </div>
         <div style={{ color: '#fff', fontWeight: 400, fontSize: 13, opacity: 0.9, marginBottom: 24 }}>
           Clean, Passion, and Contribution
@@ -31,9 +32,9 @@ const FooterMain = () => (
           ))}
         </div>
         <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginBottom: 24 }}>
-          <a href="#" aria-label="Facebook"><img src="/icon-facebook.svg" alt="Facebook" style={{ width: 28, height: 28, opacity: 0.9 }} /></a>
-          <a href="#" aria-label="Instagram"><img src="/icon-instagram.svg" alt="Instagram" style={{ width: 28, height: 28, opacity: 0.9 }} /></a>
-          <a href="#" aria-label="Twitter"><img src="/icon-twitter.svg" alt="Twitter" style={{ width: 28, height: 28, opacity: 0.9 }} /></a>
+          <a href="#" aria-label="Facebook"><Image src="/icon-facebook.svg" alt="Facebook" width={28} height={28} style={{ opacity: 0.9 }} /></a>
+          <a href="#" aria-label="Instagram"><Image src="/icon-instagram.svg" alt="Instagram" width={28} height={28} style={{ opacity: 0.9 }} /></a>
+          <a href="#" aria-label="Twitter"><Image src="/icon-twitter.svg" alt="Twitter" width={28} height={28} style={{ opacity: 0.9 }} /></a>
         </div>
       </div>
     </div>

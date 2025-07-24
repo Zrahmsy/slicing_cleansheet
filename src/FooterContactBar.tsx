@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const items = [
   {
@@ -23,7 +24,7 @@ const FooterContactBar = () => (
     <div style={{ maxWidth: 1200, width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 32, padding: '0 24px', flexWrap: 'wrap' }}>
       {items.map((item, idx) => (
         <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: 14, color: '#fff', fontSize: 16, minWidth: 220 }}>
-          <img src={item.icon} alt="icon" style={{ width: 28, height: 28, opacity: 0.9 }} />
+          <Image src={item.icon} alt="icon" width={28} height={28} style={{ opacity: 0.9 }} />
           <div>
             <div style={{ fontWeight: 500, fontSize: 15, opacity: 0.95, whiteSpace: 'pre-line' }}>{item.label}</div>
             {item.value && <div style={{ fontSize: 15, opacity: 0.85 }}>{item.value}</div>}

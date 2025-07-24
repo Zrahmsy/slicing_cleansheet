@@ -28,7 +28,7 @@ const ServicesSection = () => (
           marginBottom: 32,
         }}
       >
-        {services.map((service, idx) => (
+        {services.map((service) => (
           <ServiceCard key={service.title} {...service} />
         ))}
       </div>

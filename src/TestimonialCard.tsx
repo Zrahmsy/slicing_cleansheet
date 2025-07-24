@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface TestimonialCardProps {
   avatar: string;
@@ -12,7 +13,7 @@ interface TestimonialCardProps {
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, date, rating, text, service }) => (
   <div style={{ background: '#fff', borderRadius: 20, boxShadow: '0 2px 12px #0001', padding: 24, minWidth: 320, maxWidth: 380, display: 'flex', flexDirection: 'column', gap: 12 }}>
     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-      <img src={avatar} alt={name} style={{ width: 44, height: 44, borderRadius: '50%', objectFit: 'cover' }} />
+      <Image src={avatar} alt={name} width={44} height={44} style={{ borderRadius: '50%', objectFit: 'cover' }} />
       <div>
         <div style={{ fontWeight: 600, fontSize: 16 }}>{name}</div>
         <div style={{ color: '#64748b', fontSize: 13 }}>{date}</div>

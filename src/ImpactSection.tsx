@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import ImpactScholarshipStat from "./ImpactScholarshipStat";
 
 const stats = [
@@ -19,7 +20,7 @@ const ImpactSection = () => (
           Penyerahan Beasiswa Pendidikan 2025 di IPB University untuk mewujudkan cita-cita anak bangsa.
         </div>
         <div style={{ borderRadius: 20, overflow: 'hidden', background: '#fff', boxShadow: '0 2px 12px #0001', marginBottom: 24, maxWidth: 520 }}>
-          <img src="/impact-video-cover.svg" alt="Impact Cleansheet" style={{ width: '100%', height: 220, objectFit: 'cover', display: 'block' }} />
+          <Image src="/impact-video-cover.svg" alt="Impact Cleansheet" width={400} height={220} style={{ width: '100%', objectFit: 'cover', display: 'block' }} />
         </div>
         <div style={{ display: 'flex', gap: 8, marginLeft: 8, marginBottom: 0 }}>
           <span style={{ width: 48, height: 8, borderRadius: 4, background: '#2563eb', display: 'inline-block' }} />

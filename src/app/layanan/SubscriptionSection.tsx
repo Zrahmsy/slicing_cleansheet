@@ -1,4 +1,5 @@
 // NOTE: Gambar gunakan placeholder-image.svg dari public/
+import Image from "next/image";
 const packages = [
   {
     title: 'One Home One Hope - All You Can Clean',
@@ -45,12 +46,12 @@ export default function SubscriptionSection() {
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">Paket Berlangganan</h2>
       <p className="text-gray-500 text-center mb-8">Lebih hemat dengan berlangganan</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl px-4">
-        {packages.map((pkg, idx) => (
+        {packages.map((pkg) => (
           <div key={pkg.title} className="relative bg-white rounded-xl border shadow-sm flex flex-col overflow-hidden">
             {pkg.best && (
               <span className="absolute top-3 left-3 bg-yellow-400 text-xs font-bold px-2 py-1 rounded z-10">BEST SELLER</span>
             )}
-            <img src="/placeholder-image.svg" alt={pkg.title} className="w-full h-40 object-cover" />
+            <Image src="/placeholder-image.svg" alt={pkg.title} width={400} height={160} style={{ width: '100%', objectFit: 'cover', height: '160px' }} />
             <div className="p-4 flex flex-col flex-1">
               <h3 className="font-bold text-base mb-2">{pkg.title}</h3>
               <ul className="text-sm text-gray-700 mb-4 list-disc list-inside">

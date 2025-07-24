@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import WhyUsItem from "./WhyUsItem";
 
 const whyUsList = [
@@ -21,13 +22,13 @@ const WhyUsSection = () => (
           Kenapa Harus <span style={{ color: '#2563eb' }}>CleanSheet</span>?
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28 }}>
-          {whyUsList.map((item, idx) => (
+          {whyUsList.map((item) => (
             <WhyUsItem key={item.title} {...item} />
           ))}
         </div>
       </div>
       <div style={{ flex: 1, minWidth: 260, display: 'flex', justifyContent: 'center' }}>
-        <img src="/profile-placeholder.svg" alt="CleanSheet Person" style={{ width: 280, maxWidth: '100%', borderRadius: 24 }} />
+        <Image src="/profile-placeholder.svg" alt="CleanSheet Person" width={280} height={280} style={{ maxWidth: '100%', borderRadius: 24 }} />
       </div>
     </div>
   </section>

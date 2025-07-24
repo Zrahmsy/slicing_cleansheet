@@ -52,7 +52,7 @@ const SubscriptionSection = () => (
         Lebih hemat dengan berlangganan
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, justifyItems: 'center', marginBottom: 32 }}>
-        {subscriptions.map((sub, idx) => (
+        {subscriptions.map((sub) => (
           <SubscriptionCard key={sub.title} {...sub} />
         ))}
       </div>

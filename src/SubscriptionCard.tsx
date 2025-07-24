@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface SubscriptionCardProps {
   title: string;
@@ -14,7 +15,7 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = ({ title, image, bestS
         BEST SELLER
       </div>
     )}
-    <img src={image} alt={title} style={{ width: '100%', height: 120, objectFit: 'cover' }} />
+    <Image src={image} alt={title} width={400} height={120} style={{ width: '100%', objectFit: 'cover' }} />
     <div style={{ padding: 16, flex: 1, display: 'flex', flexDirection: 'column' }}>
       <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 8 }}>{title}</div>
       <ul style={{ paddingLeft: 18, margin: 0, marginBottom: 16, color: '#334155', fontSize: 14 }}>
