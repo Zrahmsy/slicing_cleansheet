@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const articles = [
   {
     date: '26 Juli 2022',
@@ -21,11 +23,12 @@ export default function BlogSideArticles() {
     <div className="flex flex-col gap-4">
       {articles.map((a, idx) => (
         <article key={idx} className="flex gap-3 bg-white rounded-lg shadow p-2">
-          <img src="/placeholder-image.svg" alt={a.title} className="w-24 h-16 object-cover rounded-md" />
+          <Image src="/placeholder-image.svg" alt={a.title} width={96} height={64} className="w-24 h-16 object-cover rounded-md" />
+import Image from "next/image";
           <div className="flex flex-col justify-between flex-1">
             <span className="text-xs text-gray-400">{a.date}</span>
-            <h3 className="text-sm font-bold leading-tight mb-1">{a.title}</h3>
-            <p className="text-xs text-gray-600 line-clamp-2">{a.desc}</p>
+            <h3 className="text-sm font-bold leading-tight mb-1">{a.title.replace(/"/g, "&quot;")}</h3>
+            <p className="text-xs text-gray-600 line-clamp-2">{a.desc.replace(/"/g, "&quot;")}</p>
           </div>
         </article>
       ))}

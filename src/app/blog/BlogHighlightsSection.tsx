@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const highlights = Array(6).fill({
   date: '26 Juli 2022',
   title: 'Fogging Asap dan Embun, Mana yang Lebih Aman?',
@@ -11,10 +13,11 @@ export default function BlogHighlightsSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {highlights.map((a, idx) => (
           <article key={idx} className="flex flex-col bg-white rounded-xl shadow p-3">
-            <img src="/placeholder-image.svg" alt={a.title} className="w-full h-36 object-cover rounded-md mb-2" />
+            <Image src="/placeholder-image.svg" alt={a.title} width={320} height={144} className="w-full h-36 object-cover rounded-md mb-2" />
+import Image from "next/image";
             <span className="text-xs text-gray-400">{a.date}</span>
-            <h3 className="text-base font-bold mt-1 mb-1 leading-tight">{a.title}</h3>
-            <p className="text-xs text-gray-600 line-clamp-2">{a.desc}</p>
+            <h3 className="text-base font-bold mt-1 mb-1 leading-tight">{a.title.replace(/"/g, "&quot;")}</h3>
+            <p className="text-xs text-gray-600 line-clamp-2">{a.desc.replace(/"/g, "&quot;")}</p>
           </article>
         ))}
       </div>

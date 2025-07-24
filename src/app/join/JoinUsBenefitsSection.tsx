@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const benefits = [
   { icon: '/placeholder-image.svg', label: 'Mendapatkan Penghasilan' },
   { icon: '/placeholder-image.svg', label: 'Membantu Pendidikan Anak Muda Putus Sekolah' },
@@ -13,8 +15,9 @@ export default function JoinUsBenefitsSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {benefits.map((b, idx) => (
           <div key={idx} className="flex flex-col items-center text-center gap-3">
-            <img src={b.icon} alt={b.label} className="h-12 w-12 object-contain mb-2" />
-            <span className="text-base font-medium">{b.label}</span>
+            <Image src={b.icon} alt={b.label} width={48} height={48} className="h-12 w-12 object-contain mb-2" />
+import Image from "next/image";
+            <span className="text-base font-medium">{b.label.replace(/"/g, "&quot;")}</span>
           </div>
         ))}
       </div>
