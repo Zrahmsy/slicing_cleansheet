@@ -16,8 +16,8 @@ export default function BlogHighlightsSection() {
             <Image src="/placeholder-image.svg" alt={a.title} width={320} height={144} className="w-full h-36 object-cover rounded-md mb-2" />
 import Image from "next/image";
             <span className="text-xs text-gray-400">{a.date}</span>
-            <h3 className="text-base font-bold mt-1 mb-1 leading-tight">{a.title.replace(/"/g, "&quot;")}</h3>
-            <p className="text-xs text-gray-600 line-clamp-2">{a.desc.replace(/"/g, "&quot;")}</p>
+            <h3 className="text-base font-bold mt-1 mb-1 leading-tight">{a.title}</h3>
+            <p className="text-xs text-gray-600 line-clamp-2">{a.desc}</p>
           </article>
         ))}
       </div>

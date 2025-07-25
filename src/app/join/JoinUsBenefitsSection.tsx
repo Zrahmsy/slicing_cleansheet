@@ -17,7 +17,7 @@ export default function JoinUsBenefitsSection() {
           <div key={idx} className="flex flex-col items-center text-center gap-3">
             <Image src={b.icon} alt={b.label} width={48} height={48} className="h-12 w-12 object-contain mb-2" />
 import Image from "next/image";
-            <span className="text-base font-medium">{b.label.replace(/"/g, "&quot;")}</span>
+            <span className="text-base font-medium">{b.label}</span>
           </div>
         ))}
       </div>

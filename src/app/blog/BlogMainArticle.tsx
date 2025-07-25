@@ -15,8 +15,8 @@ import Image from "next/image";
       <div className="flex flex-col justify-between flex-1">
         <div>
           <span className="text-xs text-gray-400">{article.date}</span>
-          <h2 className="text-xl font-bold mt-1 mb-2">{article.title.replace(/"/g, "&quot;")}</h2>
-          <p className="text-gray-600 text-sm mb-2">{article.desc.replace(/"/g, "&quot;")}</p>
+          <h2 className="text-xl font-bold mt-1 mb-2">{article.title}</h2>
+          <p className="text-gray-600 text-sm mb-2">{article.desc}</p>
         </div>
         <button className="self-start bg-blue-500 text-white px-4 py-1 rounded-lg font-semibold mt-2">Baca Selengkapnya</button>
       </div>

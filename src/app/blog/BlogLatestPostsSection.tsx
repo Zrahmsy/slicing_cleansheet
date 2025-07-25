@@ -17,8 +17,8 @@ export default function BlogLatestPostsSection() {
 import Image from "next/image";
             <div className="flex flex-col justify-between flex-1">
               <span className="text-xs text-gray-400">{a.date}</span>
-              <h3 className="text-lg font-bold mt-1 mb-1 leading-tight">{a.title.replace(/"/g, "&quot;")}</h3>
-              <p className="text-sm text-gray-600">{a.desc.replace(/"/g, "&quot;")}</p>
+              <h3 className="text-lg font-bold mt-1 mb-1 leading-tight">{a.title}</h3>
+              <p className="text-sm text-gray-600">{a.desc}</p>
             </div>
           </article>
         ))}

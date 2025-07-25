@@ -27,8 +27,8 @@ export default function BlogSideArticles() {
 import Image from "next/image";
           <div className="flex flex-col justify-between flex-1">
             <span className="text-xs text-gray-400">{a.date}</span>
-            <h3 className="text-sm font-bold leading-tight mb-1">{a.title.replace(/"/g, "&quot;")}</h3>
-            <p className="text-xs text-gray-600 line-clamp-2">{a.desc.replace(/"/g, "&quot;")}</p>
+            <h3 className="text-sm font-bold leading-tight mb-1">{a.title}</h3>
+            <p className="text-xs text-gray-600 line-clamp-2">{a.desc}</p>
           </div>
         </article>
       ))}
