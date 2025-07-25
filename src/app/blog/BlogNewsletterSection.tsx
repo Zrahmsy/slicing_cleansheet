@@ -16,7 +16,6 @@ export default function BlogNewsletterSection() {
           </div>
           <div className="flex-1 flex justify-end items-end">
             <Image src="/placeholder-image.svg" alt="Newsletter Person" width={120} height={160} className="h-40 w-auto object-contain" />
-import Image from "next/image";
           </div>
         </div>
       </div>

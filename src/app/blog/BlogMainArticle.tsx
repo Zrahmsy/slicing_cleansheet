@@ -11,7 +11,6 @@ export default function BlogMainArticle() {
   return (
     <article className="flex flex-col md:flex-row gap-6 bg-white rounded-xl shadow p-4">
       <Image src={article.img} alt={article.title} width={256} height={160} className="w-full md:w-64 h-44 md:h-40 object-cover rounded-lg" />
-import Image from "next/image";
       <div className="flex flex-col justify-between flex-1">
         <div>
           <span className="text-xs text-gray-400">{article.date}</span>

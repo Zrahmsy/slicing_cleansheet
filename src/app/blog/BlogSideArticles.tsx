@@ -24,7 +24,6 @@ export default function BlogSideArticles() {
       {articles.map((a, idx) => (
         <article key={idx} className="flex gap-3 bg-white rounded-lg shadow p-2">
           <Image src="/placeholder-image.svg" alt={a.title} width={96} height={64} className="w-24 h-16 object-cover rounded-md" />
-import Image from "next/image";
           <div className="flex flex-col justify-between flex-1">
             <span className="text-xs text-gray-400">{a.date}</span>
             <h3 className="text-sm font-bold leading-tight mb-1">{a.title}</h3>

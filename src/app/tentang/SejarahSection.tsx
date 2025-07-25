@@ -24,7 +24,7 @@ export default function SejarahSection() {
       <div className="md:w-1/2 w-full md:pl-12">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Sejarah Kami</h2>
         <p className="text-gray-600 text-base md:text-lg">
-          Bermula dari pengalaman pribadinya menjadi mahasiswa penerima beasiswa Bidikmisi di IPB & kesulitan mencari penghasilan tambahan di sela-sela kesibukannya sehari-hari, Dhjon juga ingin membantu sesama mahasiswa Bidikmisi yang mengalami permasalahan yang sama. Maka Dhjon menciptakan usaha "Cleansheet". Selengkapnya ada di video berikut
+          Bermula dari pengalaman pribadinya menjadi mahasiswa penerima beasiswa Bidikmisi di IPB & kesulitan mencari penghasilan tambahan di sela-sela kesibukannya sehari-hari, Dhjon juga ingin membantu sesama mahasiswa Bidikmisi yang mengalami permasalahan yang sama. Maka Dhjon menciptakan usaha &quot;Cleansheet&quot;. Selengkapnya ada di video berikut
         </p>
       </div>
     </section>

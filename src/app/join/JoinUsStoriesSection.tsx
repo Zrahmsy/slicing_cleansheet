@@ -30,7 +30,6 @@ export default function JoinUsStoriesSection() {
           {stories.map((s, idx) => (
             <div key={idx} className="flex-1 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center min-w-[260px] max-w-md mx-auto">
               <Image src={s.img} alt={s.name} width={80} height={80} className="h-20 w-20 rounded-full object-cover mb-4 border-4 border-blue-100" />
-import Image from "next/image";
               <div className="font-bold text-lg mb-1">{s.name}</div>
               <div className="text-xs text-gray-500 mb-3">{s.role}</div>
               <div className="text-gray-700 text-sm">{s.text}</div>

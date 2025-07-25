@@ -14,7 +14,6 @@ export default function BlogLatestPostsSection() {
         {posts.map((a, idx) => (
           <article key={idx} className="flex flex-row gap-6 bg-white rounded-xl shadow p-4">
             <Image src="/placeholder-image.svg" alt={a.title} width={160} height={112} className="w-40 h-28 object-cover rounded-md" />
-import Image from "next/image";
             <div className="flex flex-col justify-between flex-1">
               <span className="text-xs text-gray-400">{a.date}</span>
               <h3 className="text-lg font-bold mt-1 mb-1 leading-tight">{a.title}</h3>

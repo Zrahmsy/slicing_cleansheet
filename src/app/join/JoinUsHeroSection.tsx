@@ -14,7 +14,6 @@ export default function JoinUsHeroSection() {
       </div>
       <div className="flex-1 flex justify-center">
         <Image src="/placeholder-image.svg" alt="Heroes" width={128} height={256} className="h-64 w-auto object-contain" />
-import Image from "next/image";
       </div>
     </section>
   );
