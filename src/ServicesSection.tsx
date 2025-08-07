@@ -2,21 +2,21 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 
 const services = [
-  { title: "Daily Cleaning", image: "/placeholder-image.svg", bestSeller: true },
-  { title: "Deep Cleaning", image: "/placeholder-image.svg" },
-  { title: "Deep Cleaning Lite (Per Jam)", image: "/placeholder-image.svg", bestSeller: true },
-  { title: "Hydro Vacuum", image: "/placeholder-image.svg" },
-  { title: "Cuci Soft Furniture", image: "/placeholder-image.svg" },
-  { title: "Deep Cleaning Toilet", image: "/placeholder-image.svg" },
+  { title: "Daily Cleaning", image: "/General-Cleaning.jpg", bestSeller: true },
+  { title: "Deep Cleaning", image: "/Deep-Cleaning.jpg" },
+  { title: "Deep Cleaning Lite (Per Jam)", image: "/Deep-Cleaning.jpg", bestSeller: true },
+  { title: "Hydro Vacuum", image: "/hydroovacuum.jpg" },
+  { title: "Cuci Soft Furniture", image: "/cuci.jpg" },
+  { title: "Deep Cleaning Toilet", image: "/Toilet-General-Cleaning.jpg" },
 ];
 
 const ServicesSection = () => (
   <section style={{ padding: '48px 0', background: 'linear-gradient(180deg, #f8fafc 60%, #e0e7ef 100%)' }}>
     <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-      <h2 style={{ fontSize: 32, fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>
+      <h2 style={{ fontSize: 32, fontWeight: 700, textAlign: 'center', marginBottom: 8, color: '#222' }}>
         Layanan yang ditawarkan <span style={{ color: '#2563eb' }}>CleanSheet</span>
       </h2>
-      <p style={{ textAlign: 'center', color: '#64748b', marginBottom: 40 }}>
+      <p style={{ textAlign: 'center', color: '#222', marginBottom: 40 }}>
         Prioritas kami adalah melayani Anda dengan sepenuh hati.
       </p>
       <div

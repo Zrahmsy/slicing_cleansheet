@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image, bestSeller }) =
     )}
     <Image src={image} alt={title} width={400} height={120} style={{ width: '100%', objectFit: 'cover' }} />
     <div style={{ padding: 16, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
-      <div style={{ fontWeight: 600, fontSize: 18 }}>{title}</div>
+      <div style={{ fontWeight: 600, fontSize: 18, color: '#222' }}>{title}</div>
       <button style={{ marginTop: 8, alignSelf: 'flex-end', background: '#e0e7ef', border: 'none', borderRadius: '50%', width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
         <span style={{ fontSize: 20, color: '#2563eb' }}>&rarr;</span>
       </button>
