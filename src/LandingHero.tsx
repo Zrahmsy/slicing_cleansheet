@@ -76,7 +76,7 @@ const LandingHero = () => (
         </svg>
         {/* Gambar orang */}
         <div style={{
-          width: 400,
+          width: 1200,
           height: 400,
           background: '#e5e7eb',
           borderRadius: 24,
