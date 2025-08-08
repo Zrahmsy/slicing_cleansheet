@@ -9,10 +9,10 @@ const stats = [
 ];
 
 const ImpactSection = () => (
-  <section style={{ padding: '96px 0 0 0', background: '#f8fafc' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', gap: 0, alignItems: 'stretch' }}>
-      <div style={{ flex: 2, padding: '0 0 0 0' }}>
-        <div style={{ fontWeight: 700, fontSize: 28, marginBottom: 8, marginTop: 0 }}>
+  <section style={{ background: '#f8fafc' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 0, alignItems: 'stretch' }} className="responsive-padding">
+      <div style={{ flex: 2 }}>
+        <div className="responsive-title" style={{ fontWeight: 700, fontSize: 28, marginBottom: 8, marginTop: 0 }}>
           Impact Cleansheet<br />
           <span style={{ fontWeight: 400 }}>We Are Socialtechno<span style={{ color: '#2563eb', fontWeight: 700 }}>preneurship</span></span>
         </div>

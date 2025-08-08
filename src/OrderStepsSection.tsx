@@ -28,14 +28,14 @@ const steps = [
 const activeStep = 0;
 
 const OrderStepsSection = () => (
-  <section style={{ padding: '64px 0', background: '#fff' }}>
-    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+  <section style={{ background: '#fff' }} className="responsive-padding">
+    <div style={{ maxWidth: 1100, margin: '0 auto', textAlign: 'center' }} className="responsive-padding">
       <div style={{ color: '#64748b', fontSize: 15, fontWeight: 500, marginBottom: 8 }}>CARA PESAN</div>
-      <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 16 }}>
+      <h2 className="responsive-title" style={{ fontWeight: 700, marginBottom: 16 }}>
         Ikuti 4 langkah mudah memesan jasa kami
       </h2>
       <div style={{ width: 80, height: 4, background: '#2563eb', borderRadius: 2, margin: '0 auto 40px auto' }} />
-      <div style={{ display: 'flex', gap: 32, justifyContent: 'center', alignItems: 'center', marginBottom: 32 }}>
+      <div className="responsive-grid" style={{ marginBottom: 32 }}>
         {steps.map((step, idx) => (
           <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}>
             <OrderStepCard image={step.image} step={idx + 1} active={idx === activeStep} />

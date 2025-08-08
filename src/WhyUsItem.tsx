@@ -8,7 +8,7 @@ interface WhyUsItemProps {
 }
 
 const WhyUsItem: React.FC<WhyUsItemProps> = ({ icon, title, description }) => (
-  <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
+  <div className="responsive-card" style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
     <Image src={icon} alt="icon" width={36} height={36} style={{ flexShrink: 0 }} />
     <div>
       <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 2 }}>{title}</div>

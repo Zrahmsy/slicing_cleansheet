@@ -9,7 +9,7 @@ interface SocialProgramCardProps {
 }
 
 const SocialProgramCard: React.FC<SocialProgramCardProps> = ({ title, description, image, imageRight }) => (
-  <div style={{
+  <div className="responsive-card" style={{
     display: 'flex',
     flexDirection: imageRight ? 'row-reverse' : 'row',
     alignItems: 'center',

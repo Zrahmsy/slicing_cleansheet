@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 const LandingHero = () => (
-  <section style={{ background: '#f8fafc', padding: '56px 0 32px 0' }}>
+  <section style={{ background: '#f8fafc' }} className="responsive-padding">
     <div style={{
       display: 'flex',
       alignItems: 'center',
@@ -12,7 +12,7 @@ const LandingHero = () => (
       margin: '0 auto',
       gap: 48,
       padding: '0 24px'
-    }}>
+    }} className="responsive-padding">
       {/* Kiri: Judul, deskripsi, tombol */}
       <div style={{ flex: 1, minWidth: 320 }}>
         <h1 style={{

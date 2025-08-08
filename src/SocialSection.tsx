@@ -19,9 +19,9 @@ const programs = [
 ];
 
 const SocialSection = () => (
-  <section style={{ padding: '96px 0 0 0', background: '#fff' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-      <h2 style={{ fontSize: 32, fontWeight: 700, textAlign: 'center', marginBottom: 56 }}>
+  <section style={{ background: '#fff' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto' }} className="responsive-padding">
+      <h2 className="responsive-title" style={{ fontWeight: 700, textAlign: 'center', marginBottom: 56 }}>
         Program Sosial Cleansheet 2025
       </h2>
       {programs.map((p, i) => (

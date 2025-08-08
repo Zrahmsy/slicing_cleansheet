@@ -14,14 +14,14 @@ const whyUsList = [
 ];
 
 const WhyUsSection = () => (
-  <section style={{ padding: '64px 0', background: '#fff' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', gap: 48 }}>
+  <section style={{ background: '#fff' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', gap: 48 }} className="responsive-padding">
       <div style={{ flex: 2 }}>
         <div style={{ color: '#64748b', fontSize: 15, fontWeight: 500, marginBottom: 8 }}>PARTNER TERBAIK</div>
-        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32 }}>
+        <h2 className="responsive-title" style={{ fontWeight: 700, marginBottom: 32 }}>
           Kenapa Harus <span style={{ color: '#2563eb' }}>CleanSheet</span>?
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28 }}>
+        <div className="responsive-grid">
           {whyUsList.map((item) => (
             <WhyUsItem key={item.title} {...item} />
           ))}

@@ -43,15 +43,15 @@ const subscriptions = [
 ];
 
 const SubscriptionSection = () => (
-  <section style={{ padding: '48px 0', background: 'linear-gradient(180deg, #e0e7ef 60%, #f8fafc 100%)' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
-      <h2 style={{ fontSize: 32, fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>
+  <section style={{ background: 'linear-gradient(180deg, #e0e7ef 60%, #f8fafc 100%)' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto' }} className="responsive-padding">
+      <h2 className="responsive-title" style={{ fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>
         Paket Berlangganan <span style={{ color: '#2563eb' }}>CleanSheet</span>
       </h2>
       <p style={{ textAlign: 'center', color: '#64748b', marginBottom: 40 }}>
         Lebih hemat dengan berlangganan
       </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, justifyItems: 'center', marginBottom: 32 }}>
+      <div className="responsive-grid" style={{ marginBottom: 32 }}>
         {subscriptions.map((sub) => (
           <SubscriptionCard key={sub.title} {...sub} />
         ))}

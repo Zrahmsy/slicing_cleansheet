@@ -10,9 +10,9 @@ const mediaLogos = [
 ];
 
 const MediaCoverageSection = () => (
-  <section style={{ padding: '80px 0 0 0', background: '#fff' }}>
-    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-      <h2 style={{ fontSize: 28, fontWeight: 700, textAlign: 'center', marginBottom: 40 }}>
+  <section style={{ background: '#fff' }} className="responsive-padding">
+    <div style={{ maxWidth: 1100, margin: '0 auto' }} className="responsive-padding">
+      <h2 className="responsive-title" style={{ fontWeight: 700, textAlign: 'center', marginBottom: 40 }}>
         Liputan Media
       </h2>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 56, flexWrap: 'wrap' }}>

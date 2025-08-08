@@ -9,7 +9,7 @@ interface SubscriptionCardProps {
 }
 
 const SubscriptionCard: React.FC<SubscriptionCardProps> = ({ title, image, bestSeller, features }) => (
-  <div style={{ position: 'relative', border: '2px solid #e5e7eb', borderRadius: 16, overflow: 'hidden', background: '#fff', boxShadow: '0 2px 8px #0001', minWidth: 220, maxWidth: 320, display: 'flex', flexDirection: 'column', height: '100%' }}>
+  <div className="responsive-card" style={{ position: 'relative', border: '2px solid #e5e7eb', borderRadius: 16, overflow: 'hidden', background: '#fff', boxShadow: '0 2px 8px #0001', minWidth: 220, maxWidth: 320, display: 'flex', flexDirection: 'column', height: '100%' }}>
     {bestSeller && (
       <div style={{ position: 'absolute', top: 12, left: 12, background: '#FFD700', color: '#222', fontWeight: 700, borderRadius: 8, padding: '2px 10px', fontSize: 12, zIndex: 2 }}>
         BEST SELLER

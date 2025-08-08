@@ -11,7 +11,7 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, date, rating, text, service }) => (
-  <div style={{ background: '#fff', borderRadius: 20, boxShadow: '0 2px 12px #0001', padding: 24, minWidth: 320, maxWidth: 380, display: 'flex', flexDirection: 'column', gap: 12 }}>
+  <div className="responsive-card" style={{ background: '#fff', borderRadius: 20, boxShadow: '0 2px 12px #0001', padding: 24, minWidth: 320, maxWidth: 380, display: 'flex', flexDirection: 'column', gap: 12 }}>
     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
       <Image src={avatar} alt={name} width={44} height={44} style={{ borderRadius: '50%', objectFit: 'cover' }} />
       <div>

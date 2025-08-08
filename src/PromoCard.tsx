@@ -10,7 +10,7 @@ interface PromoCardProps {
 }
 
 const PromoCard: React.FC<PromoCardProps> = ({ image, title, desc, code, valid }) => (
-  <div style={{ borderRadius: 24, overflow: 'hidden', boxShadow: '0 2px 12px #0002', background: '#fff', minWidth: 340, maxWidth: 380, display: 'flex', flexDirection: 'column' }}>
+  <div className="responsive-card" style={{ borderRadius: 24, overflow: 'hidden', boxShadow: '0 2px 12px #0002', background: '#fff', minWidth: 340, maxWidth: 380, display: 'flex', flexDirection: 'column' }}>
     <Image src={image} alt="Promo" width={400} height={180} style={{ width: '100%', objectFit: 'cover', display: 'block' }} />
     <div style={{ padding: 24, display: 'flex', flexDirection: 'column', flex: 1 }}>
       <div style={{ marginBottom: 8, fontWeight: 700, color: '#2196f3', fontSize: 20 }}>{title}</div>

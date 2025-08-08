@@ -20,7 +20,59 @@
 }
 
 body {
+/* Responsive card for mobile/tablet */
+.responsive-card {
+  min-width: 180px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .responsive-card {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 12px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-card {
+    min-width: 100px;
+    max-width: 100%;
+    padding: 8px !important;
+  }
+}
   background: #fff !important;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive grid and font for mobile/tablet */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .responsive-title {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .responsive-title {
+    font-size: 18px !important;
+  }
+  .responsive-padding {
+    padding: 16px !important;
+  }
 }

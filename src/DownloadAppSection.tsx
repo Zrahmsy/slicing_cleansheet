@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 const DownloadAppSection = () => (
-  <section style={{ padding: '0', background: 'linear-gradient(180deg, #f8fafc 60%, #e0f2fe 100%)', position: 'relative' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', minHeight: 380, position: 'relative' }}>
+  <section style={{ background: 'linear-gradient(180deg, #f8fafc 60%, #e0f2fe 100%)', position: 'relative' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', alignItems: 'center', minHeight: 380, position: 'relative' }} className="responsive-padding">
       <div style={{ flex: 1.2, padding: '64px 0 64px 0' }}>
         <div style={{ color: '#64748b', fontSize: 15, fontWeight: 500, marginBottom: 8 }}>UNDUH APP</div>
-        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 16, color: '#222', textAlign: 'left' }}>
+        <h2 className="responsive-title" style={{ fontWeight: 700, marginBottom: 16, color: '#222', textAlign: 'left' }}>
           Pesan Layanan Kebersihan Dalam Genggaman
         </h2>
         <div style={{ color: '#334155', fontSize: 18, marginBottom: 32, textAlign: 'left', maxWidth: 520 }}>

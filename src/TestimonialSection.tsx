@@ -29,12 +29,12 @@ const testimonials = [
 ];
 
 const TestimonialSection = () => (
-  <section style={{ padding: '64px 0 0 0', background: '#f8fafc', position: 'relative' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative' }}>
-      <h2 style={{ fontSize: 32, fontWeight: 700, textAlign: 'left', marginBottom: 40 }}>
+  <section style={{ background: '#f8fafc', position: 'relative' }} className="responsive-padding">
+    <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }} className="responsive-padding">
+      <h2 className="responsive-title" style={{ fontWeight: 700, textAlign: 'left', marginBottom: 40 }}>
         Testimoni Pelanggan
       </h2>
-      <div style={{ display: 'flex', gap: 32, justifyContent: 'center', marginBottom: 32 }}>
+      <div className="responsive-grid" style={{ marginBottom: 32 }}>
         {testimonials.map((t, idx) => (
           <TestimonialCard key={idx} {...t} />
         ))}

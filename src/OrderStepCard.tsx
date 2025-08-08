@@ -8,7 +8,7 @@ interface OrderStepCardProps {
 }
 
 const OrderStepCard: React.FC<OrderStepCardProps> = ({ image, step, active }) => (
-  <div style={{
+  <div className="responsive-card" style={{
     background: '#fff',
     borderRadius: 20,
     boxShadow: active ? '0 4px 24px #2563eb22' : '0 2px 12px #0001',
